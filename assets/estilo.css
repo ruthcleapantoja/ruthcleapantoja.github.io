@@ -1,0 +1,8 @@
+.letra-clicavel {
+    cursor: pointer;
+}
+
+.letra-aceita, .palavra-correta{
+    color: #018900;
+    font-weight: bold;
+}
