@@ -6,3 +6,83 @@
     color: #018900;
     font-weight: bold;
 }
+
+.centralizado {
+    text-align: center;
+}
+
+.letra span {
+    font-size: 150px;
+}
+
+.palavra a {
+    font-size: 30px;
+}
+
+.imagem-palavra {
+    background: url("img/sprit.jpg");
+    margin-left: 18px;
+    width: 135px;
+    height: 130px;
+    background-size: 590px;
+}
+
+.aviao {
+    background-position: 430px -3px;
+}
+
+.abelha {
+    background-position: 285px -3px;
+}
+
+.anel {
+    background-position: 140px -17px;
+}
+
+.estrela {
+    background-position: 430px -162px;
+}
+
+.elefante {
+    background-position: 285px -162px;
+}
+
+.escova{
+    background-position: 140px -162px;
+}
+
+.ilha {
+     background-position: 430px -300px;
+}
+
+.igreja {
+    background-position: 285px -300px;
+}
+
+.ioio {
+    background-position: 140px -300px;
+}
+
+.onca {
+     background-position: 430px -454px;
+}
+
+.onibus {
+    background-position: 285px -454px;
+}
+
+.ovo {
+    background-position: 140px -454px;
+}
+
+.uva {
+     background-position: 430px -616px;
+}
+
+.urso {
+    background-position: 285px -616px;
+}
+
+.unicornio {
+    background-position: 140px -616px;
+}
