@@ -135,10 +135,21 @@ $(document).on('click', '.letra-clicavel', function (e) {
     }
 
     if ($(this).parent().find('.letra-aceita').length === palavra.length) {
-        $(this).parent().html('<a class="palavra-correta">' + palavra + '</a>')
+        $(this).parent().parent().html('<a class="palavra-correta" id="palavra-correta'+palavra+'">' + palavra + '</a>');
+        $('#palavra-correta'+palavra).parent().parent().addClass('letras-aceitas');
     }
 
     e.stopImmediatePropagation();
+});
+
+$(document).on('click', '.letra', function(e)
+{
+   const idParaExibir = $(this).data('exibir');
+   $('.letra').removeClass('letra-ativa');
+   $('.container-da-vogal').hide();
+   $('#'+idParaExibir).show();
+   $(this).addClass('letra-ativa');
+   e.stopImmediatePropagation();
 });
 
 criarAsPalavrasParaAView();

@@ -2,21 +2,82 @@
     cursor: pointer;
 }
 
+.link {
+    cursor: pointer;
+}
+
 .letra-aceita, .palavra-correta{
     color: #018900;
     font-weight: bold;
+}
+
+.palavra-correta:hover{
+    color: #018900;
 }
 
 .centralizado {
     text-align: center;
 }
 
+#vogal-principal-a span{
+    color: #2b5f1e;
+}
+#vogal-principal-e span{
+    color: #e0e104;
+}
+#vogal-principal-i span{
+    color: #b32100;
+}
+
+#vogal-principal-o span{
+    color: #a20091;
+}
+
+#vogal-principal-u span{
+    color: #00207f;
+}
+
+.container-letra:hover:not(.letra-ativa), .container-imagem:hover:not(.letras-aceitas) {
+    -webkit-box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.letra-ativa{
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(9,179,0,1);
+    -moz-box-shadow: inset 0px 0px 0px 5px rgba(9,179,0,1);
+    box-shadow: inset 0px 0px 0px 5px rgba(9,179,0,1);
+}
+
+.letras-aceitas {
+    border: 1px solid #09B300;
+}
+
+.letra {
+    border: 1px solid #ccc;
+}
+
 .letra span {
     font-size: 150px;
 }
 
+a {
+    color: #0f0f0f;
+}
+
 .palavra a {
     font-size: 30px;
+    text-decoration: none;,
+}
+
+.palavra a:hover:not(.palavra-correta){
+    color: #0f0f0f;
+}
+
+.letra-clicavel:hover{
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .imagem-palavra {
@@ -85,4 +146,9 @@
 
 .unicornio {
     background-position: 140px -616px;
+}
+
+
+.margin-top-100{
+    margin-top: 100px;
 }
