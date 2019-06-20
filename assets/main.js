@@ -86,7 +86,6 @@ function adicionaLetraRandomNoMeio(posicaoDaLetraRandom, palavra) {
 
 function adicionaLetraRandomNoInicioENoMeio(posicaoDaLetraRandom, palavra) {
     if (posicaoDaLetraRandom === 2) {
-        palavra = palavra.inserir(letraRandom(palavra));
         palavra = palavra.inserir(letraRandom(palavra), Math.floor(palavra.length / 2));
     }
 
@@ -95,8 +94,6 @@ function adicionaLetraRandomNoInicioENoMeio(posicaoDaLetraRandom, palavra) {
 
 function adicionaLetraRandomNoInicioMeioEFinal(posicaoDaLetraRandom, palavra) {
     if (posicaoDaLetraRandom === 3) {
-        palavra = palavra.inserir(letraRandom(palavra));
-        palavra = palavra.inserir(letraRandom(palavra), Math.floor(palavra.length / 2));
         palavra = palavra + letraRandom(palavra);
     }
 
