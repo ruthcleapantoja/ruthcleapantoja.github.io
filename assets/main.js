@@ -130,12 +130,23 @@ $(document).on('click', '.letra-clicavel', function (e) {
     if (palavra.indexOf(letra) > -1) {
         $(this).addClass('letra-aceita');
     } else {
-        $(this).addClass('letra-errada');
+
+        if($(this).hasClass('letra-errada')) {
+            $(this).removeClass('letra-errada');
+        } else {
+            $(this).addClass('letra-errada');
+        }
     }
 
-    if ($(this).parent().find('.letra-aceita').length === palavra.length) {
+    if ($(this).parent().find('.letra-aceita').length === palavra.length && $(this).parent().find('.letra-errada').length === 0) {
         $(this).parent().parent().html('<a class="palavra-correta" id="palavra-correta'+palavra+'">' + palavra + '</a>');
         $('#palavra-correta'+palavra).parent().parent().addClass('letras-aceitas');
+        Swal.fire({
+            title:  'Parabéns!',
+            type: 'success',
+            confirmButtonText:
+                'Continuar jogando.',
+        })
     }
 
     e.stopImmediatePropagation();
