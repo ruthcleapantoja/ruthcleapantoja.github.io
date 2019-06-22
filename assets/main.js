@@ -129,6 +129,8 @@ $(document).on('click', '.letra-clicavel', function (e) {
 
     if (palavra.indexOf(letra) > -1) {
         $(this).addClass('letra-aceita');
+    } else {
+        $(this).addClass('letra-errada');
     }
 
     if ($(this).parent().find('.letra-aceita').length === palavra.length) {
@@ -150,3 +152,14 @@ $(document).on('click', '.letra', function(e)
 });
 
 criarAsPalavrasParaAView();
+exibirModal();
+
+function exibirModal()
+{
+    const modal = document.getElementById("modal-magic");
+    const span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+}

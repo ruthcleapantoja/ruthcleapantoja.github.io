@@ -37,6 +37,23 @@
     color: #00207f;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.selecione-vogal {
+    padding: 5px;
+    color: #333;
+    background-color: #eefb78;
+}
+
+.selecione-letra {
+    padding: 5px;
+    color: #fafafa;
+    background-color: #0fb1e1;
+}
+
+
 .container-letra:hover:not(.letra-ativa), .container-imagem:hover:not(.letras-aceitas) {
     -webkit-box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.6);
     -moz-box-shadow: 10px 10px 27px -1px rgba(0,0,0,0.6);
@@ -75,9 +92,10 @@ a {
     color: #0f0f0f;
 }
 
-.letra-clicavel:hover{
+.letra-clicavel:hover:not(.letra-errada){
     font-size: 72px;
     font-weight: bold;
+    color: #2b5f1e;
 }
 
 .imagem-palavra {
@@ -151,4 +169,86 @@ a {
 
 .margin-top-100{
     margin-top: 100px;
+}
+
+.creative-commons {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: calc(100% - 100px);
+    bottom: 0;
+    background: url("img/cc.jpg") no-repeat;
+    background-size: 70px;
+    cursor:pointer;
+    z-index: 500000;
+}
+
+/*modal*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quadro-boas-vindas {
+    background: url("img/modal-inicial.jpg") no-repeat;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-iniciar {
+    margin-left: calc(50% - 44px);
+}
+
+.btn-iniciar {
+    margin-top: 10px;
+    color: #fafafa;
+    background-color: #1976d2;
+    border: solid 1px #ccc;
+}
+
+
+.btn-iniciar:hover{
+    top:calc(50% - 1rem + 2px);
+    left: calc(50% - 90px);
+    color: #fafafa;
+}
+
+.letra-errada
+{
+     color: #e10f00;
 }

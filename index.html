@@ -3,12 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>MAGIC do SABER</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="assets/animate.css">
 </head>
 <body>
 
+<div class="container">
+    <div class="row">
+        <h1 class="text-center"><span class="selecione-vogal">Click em uma vogal</span></h1>
+    </div>
+</div>
 <div class="container">
     <div class="row quadro-de-letras">
         <div data-exibir="vogal-a" id="vogal-principal-a" class="col-md-2 col-md-offset-1 letra-ativa letra centralizado link container-letra"><span>A</span></div>
@@ -16,6 +22,11 @@
         <div data-exibir="vogal-i" id="vogal-principal-i" class="col-md-2 letra centralizado link container-letra"><span>I</span></div>
         <div data-exibir="vogal-o" id="vogal-principal-o" class="col-md-2 letra centralizado link container-letra"><span>O</span></div>
         <div data-exibir="vogal-u" id="vogal-principal-u" class="col-md-2 letra centralizado link container-letra"><span>U</span></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h2 class="text-center "><span class="selecione-letra">Aponte as letrinhas certas para formar o nome das figuras.</span></h2>
     </div>
 </div>
 <div class="container container-imagens margin-top-100">
@@ -121,6 +132,14 @@
     </div>
 </div>
 
+<div id="modal-magic" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content row">
+        <div class="quadro-boas-vindas"></div>
+        <button id="iniciar" class="btn-iniciar close animated tada">Jogar</button>
+    </div>
+</div>
+<div class="creative-commons" title="Este trabalho está licenciado com uma Licença Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional." onclick="window.open('https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.pt');" ></div>
 </body>
 <script src="assets/jquery-3.4.1.min.js" ></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
